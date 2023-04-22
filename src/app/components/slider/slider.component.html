@@ -3,10 +3,7 @@
         <div class="slide" *ngIf="i === currentSlideIndex" @slideFade>
             <div class="slide-bg">
                 <img
-                    [src]="
-                        'https://image.tmdb.org/t/p/original/' +
-                        item.backdrop_path
-                    "
+                    [src]="imagesSizes.large + item.backdrop_path"
                     class="slide-bg-image"
                     alt=""
                 />
